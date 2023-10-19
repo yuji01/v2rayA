@@ -4,7 +4,7 @@ pkgname=v2raya
 pkgver={{pkgver}}
 pkgrel=1
 install=.INSTALL
-pkgdesc="A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan and Pingtunnel protocols"
+pkgdesc="A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv7h' 'armv6h' 'aarch64')
 url="https://github.com/v2rayA/v2rayA"
 license=('AGPL3')
@@ -16,8 +16,6 @@ backup=("etc/default/v2raya")
 
 build() {
     cd "$srcdir/v2rayA-$pkgver/gui"
-    # https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
-    export NODE_OPTIONS=--openssl-legacy-provider
     yarn --check-files
     OUTPUT_DIR="$srcdir/v2rayA-$pkgver/service/server/router/web" yarn build
 

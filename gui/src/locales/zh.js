@@ -59,6 +59,7 @@ export default {
     remarks: "别名",
     timeLastUpdate: "上次更新时间",
     numberServers: "节点数",
+    subscription: "订阅",
   },
   operations: {
     name: "操作",
@@ -251,6 +252,7 @@ export default {
     username: "用户名",
     password: "密码",
     origin: "原版",
+    pinnedCertchainSha256: "固定证书链sha256"
   },
   configureSubscription: {
     title: "订阅配置",

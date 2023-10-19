@@ -3,10 +3,11 @@ package vmessInfo
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/json-iterator/go"
 	"net"
 	"net/url"
 	"strings"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 // Deprecated: use serverObj instead.

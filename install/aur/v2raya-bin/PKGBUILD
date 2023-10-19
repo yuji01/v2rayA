@@ -5,7 +5,7 @@ _pkgname=v2raya
 pkgver={{pkgver}}
 pkgrel=1
 install=.INSTALL
-pkgdesc="A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan and Pingtunnel protocols"
+pkgdesc="A web GUI client of Project V which supports VMess, VLESS, SS, SSR, Trojan, Tuic and Juicity protocols"
 arch=('i686' 'x86_64' 'armv7h' 'armv6h' 'aarch64')
 url="https://github.com/v2rayA/v2rayA"
 license=('AGPL3')
@@ -35,10 +35,10 @@ source_aarch64=(
     "v2raya_${pkgver}::https://apt.v2raya.org/static/v2raya_linux_arm64_${pkgver}"
 )
 source_armv6h=(
-    "v2raya_${pkgver}::https://apt.v2raya.org/static/v2raya_linux_arm_${pkgver}"
+    "v2raya_${pkgver}::https://apt.v2raya.org/static/v2raya_linux_armv6_${pkgver}"
 )
 source_armv7h=(
-    "v2raya_${pkgver}::https://apt.v2raya.org/static/v2raya_linux_arm_${pkgver}"
+    "v2raya_${pkgver}::https://apt.v2raya.org/static/v2raya_linux_armv7_${pkgver}"
 )
 
 sha1sums=(

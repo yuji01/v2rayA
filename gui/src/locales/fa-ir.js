@@ -1,120 +1,119 @@
 export default {
   common: {
-    outboundSetting: "Outbound Setting",
-    setting: "Setting",
-    about: "About",
+    outboundSetting: "تنظیمات خروجی",
+    setting: "تنظیمات",
+    about: "درباره",
     loggedAs: "Logged as <b>{username}</b>",
-    v2rayCoreStatus: "Status of v2ray-core",
-    checkRunning: "Checking",
-    isRunning: "Running",
-    notRunning: "Ready",
-    notLogin: "Login please",
-    latest: "Latest",
-    local: "Local",
-    success: "SUCCESS",
-    fail: "FAIL",
-    message: "Message",
-    none: "none",
-    optional: "optional",
-    loadBalance: "Load Balance",
-    log: "Logs",
+    v2rayCoreStatus: "وضعیت v2ray-core",
+    checkRunning: "بررسی",
+    isRunning: "درحال اجرا",
+    notRunning: "آماده",
+    notLogin: "لطفا وارد شوید",
+    latest: "آخرین",
+    local: "محلی",
+    success: "موفق",
+    fail: "عدم موفقیت",
+    message: "پیام",
+    none: "هیچ یک",
+    optional: "اختیاری",
+    loadBalance: "تعادل بار",
+    log: "لاگ ها"
   },
   welcome: {
-    title: "Welcome",
+    title: "خوش آمدی",
     docker: "v2rayA service is running in Docker. Version: {version}",
     default: "v2rayA service is running. Version: {version}",
     newVersion: "Detected new version: {version}",
     messages: [
       "There is no server.",
-      "You can create/import a server or import a subscription.",
-    ],
+      "You can create/import a server or import a subscription."
+    ]
   },
   v2ray: {
-    start: "Start",
-    stop: "Stop",
+    start: "شروع",
+    stop: "خاتمه"
   },
   server: {
-    name: "Server Name",
-    address: "Server Address",
-    protocol: "Protocol",
-    latency: "Latency",
-    lastSeenTime: "Last seen time",
-    lastTryTime: "Last try time",
+    name: "نام سرور",
+    address: "آدرس سرور",
+    protocol: "پروتکل",
+    latency: "تاخیر",
+    lastSeenTime: "آخرین بار مراجعه",
+    lastTryTime: "آخرین زمان تست کردن",
     messages: {
       notAllowInsecure:
         "According to the docs of {name}, if you use {name}, AllowInsecure will be forbidden.",
       notRecommend:
-        "According to the docs of {name}, if you use {name}, AllowInsecure is not recommend.",
-    },
+        "According to the docs of {name}, if you use {name}, AllowInsecure is not recommend."
+    }
   },
   InSecureConfirm: {
-    title: "Dangerous configuration detected",
+    title: "پیکربندی خطرناک شناسایی شد",
     message:
       "The configuration has set the <b>AllowInsecure</b> to true. This may cause security risks. Are you sure to continue?",
-    confirm: "I know what I'm doing",
-    cancel: "cancel",
+    confirm: "من میدانم چه کار دارم میکنم",
+    cancel: "لغو"
   },
   subscription: {
-    host: "Host",
+    host: "هاست",
     remarks: "Remarks",
-    timeLastUpdate: "Datetime of Last Update",
-    numberServers: "Number of Servers",
-    subscription: "Subscription",
+    timeLastUpdate: "تاریخ آخرین به روز رسانی",
+    numberServers: "تعداد سرورها"
   },
   operations: {
-    name: "Operations",
-    update: "Update",
-    modify: "Modify",
-    share: "Share",
+    name: "عملیات",
+    update: "بروزرسانی",
+    modify: "تغییر",
+    share: "اشتراک",
     view: "View",
-    delete: "Delete",
-    create: "Create",
-    import: "Import",
-    inBatch: "In batch",
-    connect: "Connect",
-    disconnect: "Disconnect",
-    select: "Select",
-    login: "Login",
-    logout: "Logout",
-    configure: "Configure",
-    cancel: "Cancel",
-    saveApply: "Save and Apply",
-    confirm: "Confirm",
-    confirm2: "Carefully confirmed",
-    save: "Save",
+    delete: "حذف",
+    create: "ایجاد",
+    import: "وارد کردن",
+    inBatch: "به صورت دسته ای",
+    connect: "اتصال",
+    disconnect: "قطع اتصال",
+    select: "انتخاب",
+    login: "وارد شدن",
+    logout: "خارج شدن",
+    configure: "پیکربندی شود",
+    cancel: "لغو شود",
+    saveApply: "ذخیره و اعمال شود",
+    confirm: "تایید",
+    confirm2: "با دقت تایید شود",
+    save: "ذخیره",
     copyLink: "COPY LINK",
     helpManual: "Help & Manual",
-    yes: "Yes",
-    no: "No",
-    switchSite: "Switch to alternate site",
-    addOutbound: "Add an outbound",
+    yes: "بله",
+    no: "خیر",
+    switchSite: "به سایت جایگزین بروید",
+    addOutbound: "یک خروجی اضافه کنید"
   },
   register: {
     title: "Create an admin account first",
     messages: [
       "Remember your admin account which is importantly used to login.",
       "Account information is stored in local. We never send information to any server.",
-      "Once password was forgot, you could use v2raya --reset-password to reset.",
-    ],
+      "Once password was forgot, you could use v2raya --reset-password to reset."
+    ]
   },
   login: {
-    title: "Login",
-    username: "Username",
-    password: "Password",
+    title: "وارد شدن",
+    username: "نام کاربری",
+    password: "رمز عبور"
   },
   setting: {
     transparentProxy: "Transparent Proxy/System Proxy",
     transparentType: "Transparent Proxy/System Proxy Implementation",
     pacMode: "Traffic Splitting Mode of Rule Port",
     preventDnsSpoofing: "Prevent DNS Spoofing",
-    specialMode: "Special Mode",
+    specialMode: "حالت ویژه",
     mux: "Multiplex",
     autoUpdateSub: "Automatically Update Subscriptions",
     autoUpdateGfwlist: "Automatically Update GFWList",
     preferModeWhenUpdate: "Mode when Update Subscriptions and GFWList",
     ipForwardOn: "IP Forward",
-    portSharingOn: "Port Sharing",
-    concurrency: "Concurrency",
+    portSharingOn: "به اشتراک گذاری پورت",
+    concurrency: "همزمانی",
     options: {
       global: "Do not Split Traffic",
       direct: "Direct",
@@ -135,8 +134,8 @@ export default {
       updateGfwlistAtIntervals: "Update GFWList Regularly (Unit: hour)",
       dependTransparentMode: "Follows Transparent Proxy/System Proxy",
       closed: "Off",
-      advanced: "Advanced Setting",
-      leastPing: "Least Latency First",
+      advanced: "تنظیمات پیشرفته",
+      leastPing: "Least Latency First"
     },
     messages: {
       gfwlist:
@@ -164,24 +163,24 @@ export default {
       ssPluginImpl:
         "★default: 'transport' for simple-obfs, 'chained' for v2ray-plugin." +
         "★chained: shadowsocks traffic will be redirect to standalone plugin." +
-        "★transport: processed by the transport layer of v2ray/xray core directly.",
-    },
+        "★transport: processed by the transport layer of v2ray/xray core directly."
+    }
   },
   customAddressPort: {
-    title: "Address and Ports",
-    serviceAddress: "Address of Service",
+    title: "آدرس و پورت ها",
+    serviceAddress: "آدرس سرویس",
     portSocks5: "Port of SOCKS5",
-    portHttp: "Port of HTTP",
+    portHttp: "پورت HTTP",
     portSocks5WithPac: "Port of SOCKS5(with Rule)",
     portHttpWithPac: "Port of HTTP(with Rule)",
     portVmess: "Port of VMess(with Rule)",
-    portVmessLink: "Link of VMess port",
+    portVmessLink: "لینک پورت VMess",
     messages: [
       "Service address default as 0.0.0.0:2017 can be changed by setting environment variable <code>V2RAYA_ADDRESS</code> and command argument<code>--address</code>.",
       "If you start v2raya docker container with port mapping instead of <code>--network host</code>, you can remapping ports in this way.",
       "We cannot judge port occupations in docker mode. Confirm it by yourself.",
-      "Zero means to close this port.",
-    ],
+      "Zero means to close this port."
+    ]
   },
   customRouting: {
     title: "Customize Routing Rule",
@@ -189,7 +188,7 @@ export default {
     sameAsDefaultRule: "the same as default rule",
     appendRule: "Append Rule",
     direct: "Direct",
-    proxy: "Proxy",
+    proxy: "پروکسی",
     block: "Block",
     rule: "Rule",
     domainFile: "Domain File",
@@ -199,8 +198,8 @@ export default {
       1: 'To make a SiteDat file by yourself: <a href="https://github.com/ToutyRater/V2Ray-SiteDAT">ToutyRater/V2Ray-SiteDAT</a>',
       2: "Multi-select is supported.",
       noSiteDatFileFound: "No siteDat file found in {V2RayLocationAsset}",
-      emptyRuleNotPermitted: "Empty rule is not permitted",
-    },
+      emptyRuleNotPermitted: "Empty rule is not permitted"
+    }
   },
   doh: {
     title: "Configure DoH Server",
@@ -212,8 +211,8 @@ export default {
       "USA: cloudflare, dns.google, etc",
       'Checklist：<a href="https://dnscrypt.info/public-servers" target="_blank">public-servers</a>',
       'Besides, setting up DoH service at your own native server is suggested and well-behaved in most cases <a href="https://github.com/facebookexperimental/doh-proxy" target="_blank">doh-proxy</a>. In this case, it is recommended to run the server(doh-proxy/doh-httpproxy) providing service and client(doh-stub) connecting to doh.opendns.com at the same time and connect them in series, because you can hardly find a server that is not polluted in a generally contaminated region.',
-      "Optimally, place one or two lines above. The list will restore to default after saving with empty content.",
-    ],
+      "Optimally, place one or two lines above. The list will restore to default after saving with empty content."
+    ]
   },
   dns: {
     title: "Configure DNS Server",
@@ -221,8 +220,8 @@ export default {
     externalQueryServers: "External Domain Query Servers",
     messages: [
       '"@:(dns.internalQueryServers)" are designed to be used to look up domain names in China, while "@:(dns.externalQueryServers)" be used to look up others.',
-      '"@:(dns.internalQueryServers)" will be used to look up all domain names if "@:(dns.externalQueryServers)" is empty.',
-    ],
+      '"@:(dns.internalQueryServers)" will be used to look up all domain names if "@:(dns.externalQueryServers)" is empty.'
+    ]
   },
   egressPortWhitelist: {
     title: "Egress Port Whitelist",
@@ -233,8 +232,8 @@ export default {
       "Transparent proxy will force all TCP and UDP traffic to pass through proxy server B, where source IP address will be replaced with proxy B's. Moreover, if some clients send requests to server A that provides service, they will received responses from your proxy B's IP address weirdly, which is illegal.",
       "To resolve it, we need to add those service ports to whitelist so that not pass through proxy.For examples, ssh(22)、v2raya({v2rayaPort}).",
       "Obviously, if the server does not provide any service, you can skip configuring.",
-      "Formatting：22 means port 22，20170:20172 means three ports 20170 to 20172.",
-    ],
+      "Formatting：22 means port 22，20170:20172 means three ports 20170 to 20172."
+    ]
   },
   configureServer: {
     title: "Configure Server | Server",
@@ -248,38 +247,36 @@ export default {
     wechatVideoObfuscation: "Obfuscated as Wechat Video Calls",
     dtlsObfuscation: "Obfuscated as DTLS1.2 Packets",
     wireguardObfuscation: "Obfuscated as WireGuard Packets",
-    hostObfuscation: "Host",
-    pathObfuscation: "Path",
+    hostObfuscation: "هاست",
+    pathObfuscation: "مسیر",
     seedObfuscation: "Seed",
-    username: "Username",
-    password: "Password",
-    origin: "origin",
-    pinnedCertchainSha256: "pinned certificate chain sha256"
+    username: "نام کاربری",
+    password: "رمز عبور",
+    origin: "origin"
   },
   configureSubscription: {
-    title: "Configure Subscription",
+    title: "Configure Subscription"
   },
   import: {
     message: "Input a server link or subscription address:",
     batchMessage: "One server link per line:",
-    qrcodeError: "Failed to find a valid QRCode, please try again",
+    qrcodeError: "Failed to find a valid QRCode, please try again"
   },
   delete: {
     title: "Confirm to DELETE",
     message:
-      "Be sure to <b>DELETE</b> those servers/subscriptions? It is not reversible.",
+      "Be sure to <b>DELETE</b> those servers/subscriptions? It is not reversible."
   },
   latency: {
     message:
-      "Latency tests used to cost one or several minutes. Wait patiently please.",
+      "Latency tests used to cost one or several minutes. Wait patiently please."
   },
   version: {
     higherVersionNeeded:
       "This operation need higher version of v2rayA than {version}",
-    v2rayInvalid:
-      "geosite.dat, geoip.dat or v2ray-core may not be installed correctly",
+    v2rayInvalid: "geosite.dat, geoip.dat or v2ray-core may not be installed correctly",
     v2rayNotV5:
-      "The version of v2ray-core is not v5. Use v5 or downgrade v2rayA to v1.5",
+      "The version of v2ray-core is not v5. Use v5 or downgrade v2rayA to v1.5"
   },
   about: `<p>v2rayA is a web GUI client of V2Ray.</p>
           <p class="about-small">Default ports:</p>
@@ -299,25 +296,24 @@ export default {
         "Cannot find v2rayA at {url}. Make sure v2rayA is running at this address.",
       cannotCommunicate: [
         "Cannot communicate. If your service is running and ports open correctly, the reason may be that current browser does not allow https sites to access http resources, you can try using Chrome or switching to alternate http site.",
-        "Cannot communicate. Firefox does not allow https sites to access http resources, you can try switching to alternate http sites.",
-      ],
+        "Cannot communicate. Firefox does not allow https sites to access http resources, you can try switching to alternate http sites."
+      ]
     },
     urls: {
-      usage: "https://github.com/v2rayA/v2rayA/wiki/Usage",
-    },
+      usage: "https://github.com/v2rayA/v2rayA/wiki/Usage"
+    }
   },
   routingA: {
-    messages: ["click the button 'Help&Manual' for help"],
+    messages: ["click the button 'Help&Manual' for help"]
   },
   outbound: {
-    addMessage: "Please input the outbound name you want to add:",
+    addMessage: "لطفاً نام خروجی را که می خواهید اضافه کنید وارد کنید:",
     deleteMessage:
-      'Be sure to <b>DELETE</b> the outbound "{outboundName}"? It is not reversible.',
+      'Be sure to <b>DELETE</b> the outbound "{outboundName}"? It is not reversible.'
   },
   log: {
-    logModalTitle: "View logs",
+    logModalTitle: "دیدن لاگ ها",
     refreshInterval: "Refresh Interval",
-    seconds: "seconds",
-    autoScoll: "Auto Scroll",
-  },
+    seconds: "seconds"
+  }
 };
